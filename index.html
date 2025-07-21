@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Podología Soravilla</title>
+  <style>
+    :root {
+      --color-primario: #0077b6;
+      --color-secundario: #48cae4;
+      --color-fondo: #f1f1f1;
+      --color-texto: #333;
+      --fuente: 'Arial', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--fuente);
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
+    header {
+      background-color: var(--color-primario);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+      cursor: pointer;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      background: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .servicio {
+      background: white;
+      padding: 20px;
+      margin: 10px 0;
+      border-left: 5px solid var(--color-secundario);
+      border-radius: 4px;
+    }
+    .contact-info p, .contact-info a {
+      font-size: 1.1em;
+      margin: 6px 0;
+      color: var(--color-texto);
+    }
+    .contact-info a {
+      color: var(--color-primario);
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      max-width: 600px;
+      margin: 20px auto;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      font-family: var(--fuente);
+    }
+    form button {
+      margin-top: 20px;
+      background-color: var(--color-primario);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: var(--color-secundario);
+    }
+    .social {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .social a {
+      color: var(--color-primario);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .social a:hover {
+      text-decoration: underline;
+    }
+    @media(max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo editable: cambia el 'src' con el archivo que tengas -->
+    <img src="logo.png" alt="Logo Podología Soravilla" title="Haz clic para cambiar el logo" onclick="alert('Para cambiar el logo, reemplaza el archivo logo.png en tu servidor.')" />
+    <div>
+      <h1>Podología Soravilla</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a Podología Soravilla</h2>
+    <p>Tu clínica de confianza especializada en el cuidado de los pies. Profesionalidad, higiene y atención personalizada.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <h3>Estudio Biomecánico</h3>
+      <p>Evaluación personalizada de la marcha y postura para prevenir lesiones.</p>
+    </div>
+    <div class="servicio">
+      <h3>Tratamientos Podológicos</h3>
+      <p>Eliminación de callos, durezas, uñas encarnadas y más.</p>
+    </div>
+    <div class="servicio">
+      <h3>Podología Deportiva</h3>
+      <p>Asesoramiento y tratamiento especializado para deportistas.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <p><strong>Dirección:</strong> Calle Jose Aldeguer, 8 - 03016, Alicante</p>
+      <p><strong>Teléfono:</strong> <a href="tel:+34965144791">965 144 791</a></p>
+      <p><strong>Email:</strong> <a href="mailto:citas@soravillalossauces.es">citas@soravillalossauces.es</a></p>
+      <p><strong>Horario:</strong> de lunes a jueves de 9:00 a 14:30 y de 16:00 a 19:30, viernes de 9:00 a 14:30</p>
+      <p class="social">Síguenos en Instagram: <a href="https://instagram.com/podologiasoravilla" target="_blank">@podologiasoravilla</a></p>
+    </div>
+
+    <!-- Formulario con Formspree -->
+    <form action="https://formspree.io/f/mgebvdaj" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Podología Soravilla. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
